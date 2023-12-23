@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Login Logout</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <div class="login-form w-80 text-center mx-auto pt-20">
+        <h1 class="text-indigo-600 text-4xl p-10">Login</h1>
+        <form action="auth" method="POST">
+            <input class="border mb-4 border-indigo-600 rounded-lg pl-2 py-1" type="text" name="username" placeholder="Username" required>
+            <input class="border mb-4 border-indigo-600 rounded-lg pl-2 py-1" type="password" name="password" placeholder="Password" required>
+            <br/>
+            <button class="mt-5 border text-indigo-600 border-indigo-600 px-16 py-1 rounded-lg hover:bg-indigo-600 hover:text-white transition " type="submit">
+                Submit
+            </button>
+        </form>
+        <br>
+        <p class="text-zinc-400">Don't have an account? <a href="/signup" class="text-indigo-600"> Sign Up</a></p>
+    </div>
+    
+</body>
+</html>
